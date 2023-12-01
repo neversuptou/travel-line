@@ -52,16 +52,22 @@ const Navbar = () => {
        className='inline-block cursor-pointer lg:hidden'
        />)}
        {isClick && (
-        
-        <div className='lg:hidden block absolute top-20 w-full left-0 right-0 bg-white transition h-[100vh]'>
-         <ul className='text-center text-xl p-15 align-center'>
+        <div className='lg:hidden block absolute top-[80px] w-full left-0 right-0 bg-white transition h-[100vh]'>
+         <ul className='text-center text-xl p-10 align-center '>
          {NAV_LINKS.map((link) => (
-           <Link href={link.href} key={link.key} className='underline underline-offset-1 regular-24 text-gray-50 flexCenter cursor-pointer transition-all hover:font-bold my-8 py-8  border-green-500 hover:bg-green-500 hover:rounded-full'>
+           <Link href={link.href} key={link.key} className='border-b-2 border-gray-50 regular-20 text-gray-50 flexCenter cursor-pointer transition-all hover:font-bold my-8 py-8  border-green-500 hover:bg-green-500 hover:rounded-full rounded-full'>
              {link.label}
            </Link>
          ))}
         </ul>
-        <span className=' regular-15 text-gray-50 flexCenter cursor-pointer'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, aliquam quo. Excepturi voluptatibus possimus atque architecto exercitationem debitis, pariatur vel doloremque asperiores? Expedita nemo perferendis tempora. Consequatur animi exercitationem doloremque.</span>
+        <div className='flexCenter '>
+      <Button 
+      type="button" 
+      title="Login" 
+      icon="/user.svg"
+      variant="btn_dark_green regular-20 text-gray-50 flexCenter cursor-pointer transition-all hover:font-bold w-[89%] p-33"
+      />
+     </div>
         </div>
         
       )}
