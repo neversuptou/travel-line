@@ -4,6 +4,8 @@ import GetApp from '@/components/GetApp'
 import Guide from '@/components/Guide'
 import Hero from '@/components/Hero'
 import React from 'react'
+import { sql } from "@vercel/postgres"
+
 
 const page = () => {
   return (
@@ -18,3 +20,4 @@ const page = () => {
 }
 
 export default page
+

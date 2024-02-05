@@ -6,9 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "seed": "node -r dotenv/config ./scripts/seed.js"
   },
   "dependencies": {
+    "@vercel/postgres": "^0.7.2",
     "mongoose": "^8.0.2",
     "next": "14.0.3",
     "react": "^18",
