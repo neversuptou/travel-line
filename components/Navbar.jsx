@@ -7,6 +7,7 @@ import React, { useState, useEffect } from 'react'
 import Button from './Button'
 
 const Navbar = () => {
+  const isUserLoggedIn = true;
   const[isClick, setisClick] =useState(false);
   const toggleNavbar = () => {
     setisClick(!isClick);
@@ -41,6 +42,8 @@ const Navbar = () => {
       variant="btn_dark_green"
       />
      </div>
+
+        {/* MOBILE NAVIGATION */}
 
     <button className='block lg:hidden transtion' onClick={toggleNavbar}>
       {isClick? (<Image src="/cross.svg" alt='cross' width={32} height={32} className='inline-block cursor-pointer lg:hidden' />
