@@ -15,6 +15,7 @@ body {
 }
 
 @layer utilities {
+  
   .btn_white { 
     @apply  border-white bg-white px-8 py-3 text-green-50
   }
@@ -150,6 +151,10 @@ body {
 
 /* Padding */
 
+/* ROTATE */
+  .rotate{
+    transform: rotate(10deg);
+  }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .hide-scrollbar::-webkit-scrollbar {
