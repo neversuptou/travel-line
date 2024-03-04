@@ -6,8 +6,8 @@ import Hero from '@/components/Hero'
 import React from 'react'
 import { sql } from "@vercel/postgres"
 
-
 const page = () => {
+
   return (
     <>
       <Hero />
